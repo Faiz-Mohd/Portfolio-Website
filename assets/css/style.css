@@ -70,3 +70,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
+#header h2 span {
+  color: #fff;
+  border-bottom: 2px solid #18d26e;
+  padding-bottom: 6px;
+}
+#header h2 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  border-bottom: none;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
