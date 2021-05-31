@@ -779,3 +779,10 @@ hr{
 .contact .info-box .social-links a:hover {
   color: #18d26e;
 }
+
+.rmv{
+  display: none;
+}
+.upper{
+  text-transform: uppercase;
+}

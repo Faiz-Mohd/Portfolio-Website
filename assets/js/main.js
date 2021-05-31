@@ -13,6 +13,8 @@
 
         if (hash == '#header') {
           $('#header').removeClass('header-top');
+          $("#first-name").removeClass('rmv');
+          $('#navname').removeClass('upper');
           $("section").removeClass('section-show');
           if ($('body').hasClass('mobile-nav-active')) {
             $('body').removeClass('mobile-nav-active');
@@ -24,6 +26,8 @@
 
         if (!$('#header').hasClass('header-top')) {
           $('#header').addClass('header-top');
+          $("#first-name").addClass('rmv');
+          $('#navname').addClass('upper');
           setTimeout(function() {
             $("section").removeClass('section-show');
             $(hash).addClass('section-show');
@@ -49,7 +53,6 @@
       }
     }
   });
-
 
 
 //mobile menu
