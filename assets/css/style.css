@@ -680,6 +680,7 @@ hr{
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -785,4 +786,145 @@ hr{
 }
 .upper{
   text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.close {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: #18d26e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.portfolio-details {
+  padding-top: 40px;
+  display: none;
+  background: rgba(0, 0, 0, 0.801);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.portfolio-details .container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+  margin-top: 5%;
+
+}
+.pinfo-box{
+  border: 2px solid rgba(255, 255, 255, 0.808);
+  margin: auto;
+  position: relative;
+  background-color: black;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.portfolio-details .portfolio-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #35e888;
+}
+.portfolio-details .portfolio-details-carousel img{
+  height: 250px !important;
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #18d26e !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding-top: 45px;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 15px;
+  padding: 15px 0 0 0;
+}
+
+@media (max-width: 992px) {
+  .portfolio-details .portfolio-info {
+    padding-top: 20px;
+  }
+}
+.project-title h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffffe0;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #4ceb95;
+  margin: 4px 10px;
+}
+
+@media (max-width: 600px) {
+  .portfolio-details .portfolio-info {
+    padding-top: 20px;
+  }
+  .project-title h2{
+    margin-top: 30px;
+  }
+  .project-title h2::after {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
 }
